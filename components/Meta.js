@@ -7,7 +7,12 @@ const Meta = () => (
     <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
     {/* <link rel="shortcut icon" href="/static/favicon.png" /> */}
     <link rel="stylesheet" href="/static/nprogress.css" />
-    <title>Afcihub</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:400,400i%7CRoboto:100,300,400,700,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Afcihub | Africa's creative and innovative hub</title>
   </Head>
 );
 
