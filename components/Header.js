@@ -13,30 +13,14 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
-const HeaderHolder = styled.header`
-  /* z-index: 99 !important;
-  width: 100% !important;
-  top: 0;
-  position: fixed;
-  transform: translateZ(0);
-  background-color: #f9f9f9;
-
-  .menu-wrapper {
-    width: 98%;
-    max-width: 1450px;
-    min-height: 77px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative; */
-  }
-`;
+const HeaderHolder = styled.header``;
 
 const Header = () => (
   <HeaderHolder>
     <div className="menu-wrapper">
       <div className="header-logo">
         <a href="/">
-          <img src="static/images/logo.png" alt="Afcihub" />
+          <img src="static/images/logo.svg" alt="Afcihub" />
         </a>
       </div>
 
