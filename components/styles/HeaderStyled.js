@@ -6,11 +6,22 @@ const HeaderStyled = styled.header`
   .menu_wrapper {
     position: relative;
     max-width: 145rem;
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 2.6rem;
+
+    @media screen and (min-width: 600px) {
+      width: 98%;
+      padding: 3rem;
+    }
+
+    @media screen and (min-width: 1022px) {
+      width: 98%;
+      padding: 0;
+    }
   }
 
   .header_logo {
@@ -23,11 +34,16 @@ const HeaderStyled = styled.header`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 20rem;
-      height: 12rem;
+      width: 10rem;
+      height: 10rem;
 
       img {
         width: 90%;
+      }
+
+      @media screen and (min-width: 600px) {
+        width: 20rem;
+        height: 12rem;
       }
     }
   }
@@ -36,27 +52,52 @@ const HeaderStyled = styled.header`
     .toggle {
       cursor: pointer;
 
+      &:hover {
+        .second_menu_line {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
       div {
-        height: 3px;
-        margin-bottom: 6px;
+        height: 0.3rem;
+        margin-bottom: 0.6rem;
         background-color: #264549;
-        width: 22px;
+        width: 2.2rem;
       }
-      .first_menu_line {
+
+      .second_menu_line {
+        transition: transform 0.3s ease;
+        transform: translate3d(1rem, 0, 0);
       }
+
+      .third_menu_line {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 1022px) {
+      display: none;
     }
   }
 
   .main_menu {
-    list-style-type: none;
-    padding: 1.5rem;
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 1022px) {
+      list-style-type: none;
+      padding: 1rem;
+      display: flex;
+    }
 
     li {
-      padding: 1.5rem;
+      padding: 1.5rem 1rem;
 
       a {
         font-size: 1.4rem;
+      }
+
+      @media screen and (min-width: 1160px) {
+        padding: 1.5rem;
       }
     }
   }
