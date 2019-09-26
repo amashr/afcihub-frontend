@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 const HeaderStyled = styled.header`
   background: #f9f9f9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   .menu_wrapper {
     position: relative;
@@ -28,6 +32,7 @@ const HeaderStyled = styled.header`
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1000;
 
     a {
       background: ${props => props.theme.red};
@@ -38,7 +43,8 @@ const HeaderStyled = styled.header`
       height: 10rem;
 
       img {
-        width: 90%;
+        width: 100%;
+        padding: 0.4rem;
       }
 
       @media screen and (min-width: 600px) {

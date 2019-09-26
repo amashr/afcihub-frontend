@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px */
+    scroll-behavior: smooth;
   }
   
   body {
@@ -23,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 2.9rem;
     color: ${props => props.theme.darkBlue};
     background-color: #fff;
+    padding-top: 7.6rem;
   }
 
   a {    
