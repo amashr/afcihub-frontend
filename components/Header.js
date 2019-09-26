@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
-import styled from 'styled-components';
+import HeaderStyled from './styles/HeaderStyled';
 
 Router.events.on('routeChangeStart', () => {
   NProgress.start();
@@ -13,67 +13,86 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
-const HeaderHolder = styled.header``;
-
 const Header = () => (
-  <HeaderHolder>
-    <div className="menu-wrapper">
-      <div className="header-logo">
-        <a href="/">
-          <img src="static/images/logo.svg" alt="Afcihub" />
-        </a>
+  <HeaderStyled>
+    <div className="menu_wrapper">
+      <div className="header_logo">
+        <Link href="/">
+          <a>
+            <img src="static/images/logo.svg" alt="Afcihub" />
+          </a>
+        </Link>
       </div>
 
-      <div className="toggle-holder">
-        <div id="toggle">
-          <div className="first-menu-line" />
-          <div className="second-menu-line" />
-          <div className="third-menu-line" />
+      <div className="toggle_holder">
+        <div className="toggle">
+          <div className="first_menu_line" />
+          <div className="second_menu_line" />
+          <div className="third_menu_line" />
         </div>
       </div>
 
-      <div className="menu-holder">
-        <nav id="header-main-menu">
-          <ul className="main-menu sm sm-clean">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#clients">Clients</a>
-            </li>
-            <li>
-              <a href="#news">News</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#team">Team</a>
-            </li>
-            <li>
-              <a href="#milestones">Milestones</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#pricing">Pricing</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div className="clear" />
+      <nav>
+        <ul className="main_menu">
+          <li>
+            <Link href="#home">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#services">
+              <a>Services</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#portfolio">
+              <a>Portfolio</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#clients">
+              <a>Clients</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#news">
+              <a>News</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#skills">
+              <a>Skills</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#team">
+              <a>Team</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#milestones">
+              <a>Milestones</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#about">
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#pricing">
+              <a>Pricing</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="#contact">
+              <a>Contact</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </HeaderHolder>
+  </HeaderStyled>
 );
 
 export default Header;
