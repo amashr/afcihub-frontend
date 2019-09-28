@@ -45,7 +45,7 @@ const HomeStyled = styled.main`
     }
 
     &_background {
-      background-image: url('static/images/main_img_01.jpg');
+      background-image: url('static/images/main_img_0001.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -53,9 +53,9 @@ const HomeStyled = styled.main`
       .logo_icon {
         margin-left: auto;
         margin-right: auto;
-        max-width: 80rem;
+        max-width: 35rem;
         display: block;
-        top: 50%;
+        top: 17%;
         position: relative;
         transform: translateY(-50%);
       }
@@ -68,8 +68,8 @@ const Home = () => (
     <SectionStyled padBottom="0">
       <div className="content_wrapper">
         <h1 className="big_title">
-          Digital Crafters <br />
-          Clean Code & Neat Design
+          Africa's Creative & Innovative<br />
+          hub for future enterprenuers
         </h1>
         <p className="site_description">
           We are Afcihub. Award-winning design & code <br />
@@ -81,7 +81,7 @@ const Home = () => (
     <div className="home_full_width">
       <img className="dots" src="static/images/dots.png" alt="Dots" />
       <Link href="#contact">
-        <ButtonStyled className="home_button">CONTACT US</ButtonStyled>
+        <ButtonStyled className="home_button">GET STARTED</ButtonStyled>
       </Link>
       <div className="home_full_width_background">
         <img
