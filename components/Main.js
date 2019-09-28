@@ -45,9 +45,10 @@ const MainStyled = styled.main`
     }
 
     &_background {
-      background-image: url('static/images/main_img_01.jpg');
+      background-image: url('static/images/main.jpg');
       background-repeat: no-repeat;
       background-size: cover;
+      background-attachment: fixed;
       height: 100vh;
 
       .logo_icon {
