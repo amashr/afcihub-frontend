@@ -29,6 +29,7 @@ const MainStyled = styled.main`
 
   .home_full_width {
     position: relative;
+    z-index: -1;
 
     .dots {
       position: absolute;
@@ -45,7 +46,7 @@ const MainStyled = styled.main`
     }
 
     &_background {
-      background: linear-gradient(rgba(3, 30, 35, 0.6), rgba(3, 30, 35, 0.6)),
+      background: linear-gradient(rgba(3, 30, 35, 0.7), rgba(3, 30, 35, 0.7)),
         url('static/images/main.jpg');
       background-repeat: no-repeat;
       background-size: cover;
