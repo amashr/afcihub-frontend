@@ -45,7 +45,7 @@ const MainStyled = styled.main`
     }
 
     &_background {
-      background: linear-gradient(rgba(3, 30, 35, 0.5), rgba(3, 30, 35, 0.5)),
+      background: linear-gradient(rgba(3, 30, 35, 0.6), rgba(3, 30, 35, 0.6)),
         url('static/images/main.jpg');
       background-repeat: no-repeat;
       background-size: cover;
