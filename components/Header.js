@@ -35,57 +35,57 @@ const Header = () => (
       <nav>
         <ul className="main_menu">
           <li>
-            <Link href="#home">
+            <Link href="/index">
               <a>Home</a>
             </Link>
           </li>
           <li>
-            <Link href="#services">
+            <Link href="/services">
               <a>Services</a>
             </Link>
           </li>
           <li>
-            <Link href="#portfolio">
+            <Link href="/portfolio">
               <a>Portfolio</a>
             </Link>
           </li>
           <li>
-            <Link href="#clients">
+            <Link href="/clients">
               <a>Clients</a>
             </Link>
           </li>
           <li>
-            <Link href="#news">
+            <Link href="/news">
               <a>News</a>
             </Link>
           </li>
           <li>
-            <Link href="#skills">
+            <Link href="/skills">
               <a>Skills</a>
             </Link>
           </li>
           <li>
-            <Link href="#team">
+            <Link href="/team">
               <a>Team</a>
             </Link>
           </li>
           <li>
-            <Link href="#milestones">
+            <Link href="/milestones">
               <a>Milestones</a>
             </Link>
           </li>
           <li>
-            <Link href="#about">
+            <Link href="/about">
               <a>About</a>
             </Link>
           </li>
           <li>
-            <Link href="#pricing">
+            <Link href="/pricing">
               <a>Pricing</a>
             </Link>
           </li>
           <li>
-            <Link href="#contact">
+            <Link href="/contact">
               <a>Contact</a>
             </Link>
           </li>

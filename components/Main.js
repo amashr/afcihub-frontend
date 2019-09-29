@@ -84,7 +84,7 @@ const Main = () => (
     <div className="home_full_width">
       <img className="dots" src="static/images/dots.png" alt="Dots" />
       <Link href="#contact">
-        <ButtonStyled className="home_button">CONTACT US</ButtonStyled>
+        <ButtonStyled className="home_button">GET STARTED</ButtonStyled>
       </Link>
       <div className="home_full_width_background">
         <img
