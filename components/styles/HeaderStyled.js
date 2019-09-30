@@ -9,7 +9,6 @@ const HeaderStyled = styled.header`
   z-index: 100;
 
   .menu_wrapper {
-    position: relative;
     max-width: 145rem;
     width: 95%;
     margin: 0 auto;
@@ -44,6 +43,7 @@ const HeaderStyled = styled.header`
   }
 
   .toggle_holder {
+    margin-left: auto;
     .toggle {
       cursor: pointer;
 
