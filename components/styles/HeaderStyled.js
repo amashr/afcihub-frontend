@@ -14,7 +14,7 @@ const HeaderStyled = styled.header`
     width: 95%;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 2.6rem;
 
@@ -30,27 +30,15 @@ const HeaderStyled = styled.header`
   }
 
   .header_logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-
     a {
-      background: ${props => props.theme.red};
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 10rem;
-      height: 10rem;
-
       img {
+        max-width: 10rem;
         width: 100%;
         padding: 0.4rem;
-      }
 
-      @media screen and (min-width: 600px) {
-        width: 20rem;
-        height: 12rem;
+        @media screen and (min-width: 600px) {
+          max-width: 15rem;
+        }
       }
     }
   }
