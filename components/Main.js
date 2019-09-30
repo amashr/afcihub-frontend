@@ -29,20 +29,18 @@ const MainStyled = styled.main`
 
   .home_full_width {
     position: relative;
-    z-index: -1;
+    z-index: 10;
 
     .dots {
       position: absolute;
       top: -24rem;
       left: calc(50% + 10.5rem);
-      z-index: -1;
     }
 
     .home_button {
       position: absolute;
       top: -3.5rem;
       left: 70%;
-      z-index: 98;
     }
 
     &_background {
@@ -56,7 +54,7 @@ const MainStyled = styled.main`
       .logo_icon {
         margin-left: auto;
         margin-right: auto;
-        max-width: 80rem;
+        max-width: 60rem;
         display: block;
         top: 50%;
         position: relative;
@@ -84,12 +82,12 @@ const Main = () => (
     <div className="home_full_width">
       <img className="dots" src="static/images/dots.png" alt="Dots" />
       <Link href="#contact">
-        <ButtonStyled className="home_button">CONTACT US</ButtonStyled>
+        <ButtonStyled className="home_button">GET STARTED</ButtonStyled>
       </Link>
       <div className="home_full_width_background">
         <img
           className="logo_icon"
-          src="static/images/logo.svg"
+          src="static/images/logo-main.svg"
           alt="Afcihub Icon"
         />
       </div>
