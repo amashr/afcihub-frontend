@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { SectionStyled } from './styles/Helpers';
 import ButtonStyled from './styles/Button';
 
 const MainStyled = styled.main`
@@ -8,9 +7,22 @@ const MainStyled = styled.main`
   .big_title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 4.6rem;
-    line-height: 133%;
+    font-size: 3.8rem;
+    line-height: 115%;
     color: #264549;
+
+    @media screen and (min-width: 600px) {
+      font-size: 4.6rem;
+      line-height: 133%;
+    }
+  }
+
+  .main_wrapper {
+    padding: 6.5rem 0 3.5rem;
+
+    @media screen and (min-width: 600px) {
+      padding: 13.5rem 0 0;
+    }
   }
 
   .content_wrapper {
@@ -24,7 +36,10 @@ const MainStyled = styled.main`
     line-height: 150%;
     color: #214b51;
     margin-bottom: 0;
-    padding-bottom: 3rem;
+
+    @media screen and (min-width: 600px) {
+      padding-bottom: 3rem;
+    }
   }
 
   .home_full_width {
@@ -32,15 +47,25 @@ const MainStyled = styled.main`
     z-index: 10;
 
     .dots {
-      position: absolute;
-      top: -24rem;
-      left: calc(50% + 10.5rem);
+      display: none;
+
+      @media screen and (min-width: 1022px) {
+        display: block;
+        position: absolute;
+        top: -24rem;
+        left: calc(50% + 10.5rem);
+      }
     }
 
     .home_button {
-      position: absolute;
-      top: -3.5rem;
-      left: 70%;
+      display: none;
+
+      @media screen and (min-width: 1022px) {
+        display: block;
+        position: absolute;
+        top: -3.5rem;
+        left: 70%;
+      }
     }
 
     &_background {
@@ -66,7 +91,7 @@ const MainStyled = styled.main`
 
 const Main = () => (
   <MainStyled id="home">
-    <SectionStyled padBottom="0">
+    <div className="main_wrapper">
       <div className="content_wrapper">
         <h1 className="big_title">
           Digital Crafters <br />
@@ -78,7 +103,7 @@ const Main = () => (
         </p>
         <br />
       </div>
-    </SectionStyled>
+    </div>
     <div className="home_full_width">
       <img className="dots" src="static/images/dots.png" alt="Dots" />
       <Link href="#contact">
