@@ -33,11 +33,6 @@ const HeaderStyled = styled.header`
       img {
         max-width: 10rem;
         width: 100%;
-        padding: 0.4rem;
-
-        @media screen and (min-width: 600px) {
-          max-width: 15rem;
-        }
       }
     }
   }
