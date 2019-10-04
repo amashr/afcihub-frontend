@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import HeaderStyled from './styles/HeaderStyled';
+import PropTypes from 'prop-types'
+
 
 Router.events.on('routeChangeStart', () => {
   NProgress.start();
@@ -13,7 +15,7 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
-const Header = () => (
+const Header = ({ isLoggedIn}) => (
   <HeaderStyled>
     <div className="menu_wrapper">
       <div className="header_logo">
@@ -89,10 +91,16 @@ const Header = () => (
               <a>Contact</a>
             </Link>
           </li>
-        </ul>
+           { isLoggedIn ? ( <li><Link href="/secret"><a>Secret</a></Link></li> ) : ( <li><Link href="/login"><a>Login</a></Link></li> ) }
+        { isLoggedIn ? ( <li><Link href="/logout"><a>Logout</a></Link></li> ) : ( '' ) }
+        </ul> 
       </nav>
     </div>
   </HeaderStyled>
 );
+
+Header.prototype = {
+  isLoggedIn: PropTypes.bool
+}
 
 export default Header;
