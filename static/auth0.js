@@ -14,7 +14,7 @@ function webAuth(clientID, domain) {
 function login() {
   const options = {
     responseType: 'id_token',
-    redirectUri: 'http://localhost:3001/redirect',
+    redirectUri: 'http://localhost:3000/redirect',
     scope: 'openid profile email'
   }
 
