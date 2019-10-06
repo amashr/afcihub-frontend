@@ -12,6 +12,7 @@ export default class extends React.Component {
       }
       verifyToken(result.idToken).then(valid => {
         if (valid) {
+          console.log('this is the token ', result.accessToken)
           saveToken(result.idToken, result.accessToken);
           Router.push('/');
         } else {
