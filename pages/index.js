@@ -1,9 +1,19 @@
 import Main from '../components/Main';
+import {  getTokenForBrowser } from '../static/auth'
 
-const Index = () => (
-  <>
-    <Main />
-  </>
-);
+import template  from '../static/template'
+import PropTypes from 'prop-types'
 
-export default Index;
+const Index = ({isLoggedIn}) => (
+  <div>
+    { !isLoggedIn && (
+      <Main />
+    )};
+  </div>
+)
+
+Index.propTypes = {
+  isLoggedIn: PropTypes.bool
+}
+
+export default template(Index);
